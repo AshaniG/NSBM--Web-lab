@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Registration Form</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      position: relative;
+    }
+
+    .form-heading {
+      position: absolute;
+      top: -43px;
+      left: 20px;
+      background-color: #fff;
+      padding: 0 10px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    td {
+      padding: 10px 0;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 10px 20px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form action="#" method="post">
+      <h1 class="form-heading">Car Registration</h1>
+      <table>
+        <tr>
+          <td>Owner Name:</td>
+          <td><input type="text" name="owner_name" required></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="owner_email" required></td>
+        </tr>
+        <tr>
+          <td>Phone Number:</td>
+          <td><input type="tel" name="phone_number" required></td>
+        </tr>
+        <tr>
+          <td>Country:</td>
+          <td>
+            <select name="country" required>
+              <option value="">Select a Country</option>
+              <option value="sri_lanka">Sri Lanka</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+              <!-- Add more countries here -->
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Car Model:</td>
+          <td><input type="text" name="car_model" required></td>
+        </tr>
+        <tr>
+          <td>Manufactured Year:</td>
+          <td>
+            <select name="manufactured_year" required>
+              <option value="">Select a Year</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <!-- Add more years here -->
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Transmission:</td>
+          <td>
+            <input type="radio" name="transmission" value="manual" required> Manual
+            <input type="radio" name="transmission" value="auto" required> Auto
+            
+          </td>
+        </tr>
+        <tr>
+          <td>Other:</td>
+          <td><textarea name="additional_details" rows="4" cols="50"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="checkbox" name="agree_terms" required>I Agree to the Terms and Conditions:</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
+
