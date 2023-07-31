@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day of the Week</title>
+</head>
+<body>
+    <script>
+        function getDayOfWeek() {
+            const dayNumber = parseInt(prompt("Enter a number from 1 to 7:"));
+
+            // Validate the input
+            if (isNaN(dayNumber) || dayNumber < 1 || dayNumber > 7) {
+                alert("Invalid input. Please enter a number between 1 and 7.");
+                return;
+            }
+
+            let dayName;
+            switch (dayNumber) {
+                case 1:
+                    dayName = "Sunday";
+                    break;
+                case 2:
+                    dayName = "Monday";
+                    break;
+                case 3:
+                    dayName = "Tuesday";
+                    break;
+                case 4:
+                    dayName = "Wednesday";
+                    break;
+                case 5:
+                    dayName = "Thursday";
+                    break;
+                case 6:
+                    dayName = "Friday";
+                    break;
+                case 7:
+                    dayName = "Saturday";
+                    break;
+            }
+
+            alert(`The day of the week is: ${dayName}`);
+        }
+
+        // Call the function to get the day of the week
+        getDayOfWeek();
+    </script>
+</body>
+</html>
