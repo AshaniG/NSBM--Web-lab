@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background Color </title>
+</head>
+<body>
+    <button id="redButton" onmouseover="changeColor('red')" onmouseout="resetColor('red')">Red</button>
+    <button id="greenButton" onmouseover="changeColor('green')" onmouseout="resetColor('green')">Green</button>
+    <button id="blueButton" onmouseover="changeColor('blue')" onmouseout="resetColor('blue')">Blue</button>
+
+    <script>
+        function changeColor(color) {
+            document.getElementById(color + 'Button').style.backgroundColor = color;
+        }
+
+        function resetColor(color) {
+            document.getElementById(color + 'Button').style.backgroundColor = '';
+        }
+    </script>
+</body>
+</html>
