@@ -1,0 +1,25 @@
+.T{
+    background-color: yellow;
+}
+    
+.ta{
+   background-color: yellow;
+
+}
+.hello{
+    
+        width: 350px;
+        height: 300px;
+        background-color:darkgray;
+        
+        text-align  : center;
+        padding: 100px; 
+        margin: 20px; 
+     }
+     .t{
+        background-color: white;
+     }
+     .table{
+        height: 50px;
+        width: 75px;
+     }
