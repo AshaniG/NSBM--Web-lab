@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Total and Average Marks</title>
+</head>
+<body>
+    <h2>Enter 5 Marks:</h2>
+    <input type="number" id="mark1" placeholder="Enter mark 1"><br>
+    <input type="number" id="mark2" placeholder="Enter mark 2"><br>
+    <input type="number" id="mark3" placeholder="Enter mark 3"><br>
+    <input type="number" id="mark4" placeholder="Enter mark 4"><br>
+    <input type="number" id="mark5" placeholder="Enter mark 5"><br>
+    <button onclick="calculateAndGrade()">Grade</button>
+
+    <script>
+        function calculateAndGrade() {
+            const mark1 = parseFloat(document.getElementById("mark1").value);
+            const mark2 = parseFloat(document.getElementById("mark2").value);
+            const mark3 = parseFloat(document.getElementById("mark3").value);
+            const mark4 = parseFloat(document.getElementById("mark4").value);
+            const mark5 = parseFloat(document.getElementById("mark5").value);
+
+            // Calculate the total and average
+            const totalMarks = mark1 + mark2 + mark3 + mark4 + mark5;
+            const averageMarks = totalMarks / 5;
+
+            // Display the total and average
+            alert(`Total Marks: ${totalMarks}\nAverage Marks: ${averageMarks.toFixed(2)}`);
+
+            // Check the average and display the grade message
+            if (averageMarks > 30) {
+                alert("Congrats! You passed.");
+            } else {
+                alert("Better luck next time.");
+            }
+        }
+    </script>
+</body>
+</html>
